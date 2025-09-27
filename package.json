@@ -1,0 +1,49 @@
+{
+  "name": "vchat-ai",
+  "version": "1.0.0",
+  "description": "🤖 vChatbot AI - Facebook Messenger Bot tích hợp AI cho chăm sóc khách hàng tự động, quản lý lead và hỗ trợ bán hàng",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "test": "jest",
+    "lint": "eslint src/",
+    "format": "prettier --write src/",
+    "seed": "node scripts/seed.js",
+    "setup": "npm install && npm run seed"
+  },
+  "keywords": [
+    "facebook",
+    "messenger",
+    "bot",
+    "ai",
+    "customer-support",
+    "lead-generation",
+    "sales"
+  ],
+  "author": "Vũ Văn Nam Việt - Nam Việt IT",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "body-parser": "^1.20.2",
+    "mongoose": "^8.0.3",
+    "dotenv": "^16.3.1",
+    "axios": "^1.6.2",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "morgan": "^1.10.0",
+    "moment": "^2.29.4",
+    "joi": "^17.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "jest": "^29.7.0",
+    "supertest": "^6.3.3",
+    "eslint": "^8.55.0",
+    "prettier": "^3.1.0"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}
